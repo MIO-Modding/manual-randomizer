@@ -9,9 +9,14 @@ if [[ -d manual_mio_samwell/data ]] ; then
   rm -r manual_mio_samwell/data
 fi
 mkdir manual_mio_samwell/data
+if [[ -d manual_mio_samwell/hooks ]] ; then
+  rm -r manual_mio_samwell/hooks
+fi
+mkdir manual_mio_samwell/hooks
 
 python tomo.py world.json manual_mio_samwell/data
-cp fixed_data/* manual_mio_samwell/data/
+cp static_inputs/data/* manual_mio_samwell/data/
+cp static_inputs/hooks/* manual_mio_samwell/hooks/
 
 if [[ -f manual_mio_samwell.apworld ]] ; then
   rm manual_mio_samwell.apworld

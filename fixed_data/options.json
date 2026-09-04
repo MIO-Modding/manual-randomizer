@@ -1,8 +1,0 @@
-{
-  "user": {
-    "Randomize Slash": {
-    "type": "Toggle",
-    "default": false
-    }
-  }
-}

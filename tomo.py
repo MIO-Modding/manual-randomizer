@@ -162,15 +162,13 @@ def room_to_region(room):
         "exit_requires": dict()
     })
 
-def parse_requirements(reqs, catalog, OptAll=True):
+def parse_requirements(reqs, catalog, OptAll=False):
     if not reqs: return ""
     if OptAll: return f"OptAll({parse_requirements(reqs,catalog,False)})"
     match reqs["rule"]:
         case "Has":
             item_name = reqs["args"]["item_name"]
             if item_name in catalog:
-                if item_name == "Slash":
-                    return f"(|{catalog["Slash"]}| OR {{YamlDisabled(Randomize Slash)}})"
                 return f"|{catalog[item_name]}|"
             else:
                 return f"|{sanitize(item_name)}|"
