@@ -22,10 +22,19 @@ from typing import Type, Any
 #####################################################################
 
 
+# (Experimental) If you enable this option be prepared
+# to use debug to reach logical areas which are physically inaccessible and please
+# report bugs you encounter on the Github issue tracker.
+
 ##### Added for this manual
 class RandomizeSlash(Toggle):
-    """Start the game without the ability to use your basic attack. An extra location will be added at the beginning of the game."""
-    display_name = "Randomize Slash"
+    """Start the game without the ability to use your basic attack.
+An extra location will be added at the beginning of the game.
+    (Experimental) If you enable this option be prepared to use debug
+to reach logical areas which are physically inaccessible.
+Please report bugs you encounter on the Github issue tracker.
+"""
+    display_name = "Randomize Slash (Experimental)"
     default = False
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
