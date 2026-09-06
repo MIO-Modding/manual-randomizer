@@ -52,19 +52,20 @@ def item_world_to_manual(item):
 
 def get_locations(locations, catalog):
     location_lambda = lambda location: location_world_to_manual(location, catalog)
+    all_voices = " |VOICE>LIHO (Liho's Voice)| AND |VOICE>HALYN (Halyn's Voice)| AND |VOICE>ASMA (Asma's Voice)| AND |VOICE>AMYTIS (Amytis' Voice)| "
     victory = [
         {
             "name": "Ati Ending",
             "region": "HUB_hub_central",
             "category": "Victory",
-            "requires": "|Ati Defeated|",
+            "requires": "|Ati Defeated| AND " + all_voices,
             "victory": True
         },
         {
             "name": "Shii Ending",
             "region": "GA_roof_core",
             "category": "Victory",
-            "requires": "|Shii Defeated|",
+            "requires": "|Shii Defeated| AND " + all_voices,
             "victory": True
         },
     ]
@@ -80,13 +81,15 @@ def location_world_to_manual(location, catalog):
     # Special cases for locations which would otherwise
     # be duplicates
     if location["roomName"] == "GA_bou_up_F1" and \
-                item_name == "Crystallized Nacre":
+                (item_name == "Crystallised Nacre" or \
+                item_name == "Crystallized Nacre"):
         if location["name"].endswith("Above a Door"):
             item_name += "_upper"
         else:
             item_name += "_lower"
     if location["roomName"] == "LQ_under_mast_C1" and \
-                item_name == "Crystallized Nacre":
+                (item_name == "Crystallised Nacre" or \
+                item_name == "Crystallized Nacre"):
         if location["name"].endswith("Right"):
             item_name += "_right"
         else:
