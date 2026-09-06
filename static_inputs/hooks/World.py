@@ -54,7 +54,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     locationNamesToRemove: list[str] = [] # List of location names
 
     # Added for this manual
-    if is_option_enabled(multiworld, player, "randomize_slash"):
+    if not is_option_enabled(multiworld, player, "randomize_slash"):
         locationNamesToRemove.append(
             # Bad: Sensitive to sanitizing changes
             "ST_security_fall_P1--(Slash)"
@@ -89,7 +89,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 
     # Added for this Manual
-    if is_option_enabled(multiworld, player, "randomize_slash"):
+    if not is_option_enabled(multiworld, player, "randomize_slash"):
         slash_item = next(i for i in item_pool if i.name.startswith("UNLOCK>SLASH"))
         multiworld.push_precollected(slash_item)
         remove_specific_item(item_pool, slash_item)
