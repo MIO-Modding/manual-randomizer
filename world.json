@@ -1,6 +1,6 @@
 {
-    "version": "0.0.101",
-    "timestamp": "1788662603.152463478",
+    "version": "0.0.102",
+    "timestamp": "1788666719.199354799",
     "rooms": [
         {
             "id": 1,
@@ -14391,7 +14391,31 @@
             "fromName": "GA_bou_chill_P4",
             "toId": 57,
             "toName": "GA_bou_lower_C1",
-            "requirements": null
+            "requirements": {
+                "rule": "Or",
+                "options": [],
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Hairpin",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Sail",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
+            }
         },
         {
             "id": 63,
