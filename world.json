@@ -1,6 +1,6 @@
 {
-    "version": "0.0.98",
-    "timestamp": "1789353380.916494642",
+    "version": "0.0.99",
+    "timestamp": "1789356503.672827363",
     "rooms": [
         {
             "id": 1,
@@ -19111,13 +19111,29 @@
             "toId": 122,
             "toName": "GA_vin_bridge_C3",
             "requirements": {
-                "rule": "Has",
+                "rule": "And",
                 "options": [],
-                "args": {
-                    "item_name": "Slingshot",
-                    "count": 1
-                },
-                "children": null
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slash",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slingshot",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
             }
         },
         {
@@ -22564,13 +22580,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Has",
@@ -22640,13 +22672,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Has",
@@ -22825,13 +22873,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Has",
@@ -22958,13 +23022,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     }
                 ]
             }
@@ -32013,13 +32093,29 @@
                 "args": null,
                 "children": [
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Has",
@@ -32261,13 +32357,29 @@
                         ]
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     }
                 ]
             }
@@ -32531,13 +32643,29 @@
             "toId": 382,
             "toName": "ST_tube_center_C3",
             "requirements": {
-                "rule": "Has",
+                "rule": "And",
                 "options": [],
-                "args": {
-                    "item_name": "Slingshot",
-                    "count": 1
-                },
-                "children": null
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slash",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slingshot",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
             }
         },
         {
@@ -34677,13 +34805,29 @@
             "toId": 416,
             "toName": "ST_tube_hall_C2",
             "requirements": {
-                "rule": "Has",
+                "rule": "And",
                 "options": [],
-                "args": {
-                    "item_name": "Slingshot",
-                    "count": 1
-                },
-                "children": null
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slash",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slingshot",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
             }
         },
         {
@@ -35083,13 +35227,29 @@
             "toId": 417,
             "toName": "ST_tube_hub_P1",
             "requirements": {
-                "rule": "Has",
+                "rule": "And",
                 "options": [],
-                "args": {
-                    "item_name": "Slingshot",
-                    "count": 1
-                },
-                "children": null
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slash",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slingshot",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
             }
         },
         {
@@ -36102,13 +36262,29 @@
             "toId": 387,
             "toName": "ST_tube_chase_C3",
             "requirements": {
-                "rule": "Has",
+                "rule": "And",
                 "options": [],
-                "args": {
-                    "item_name": "Slingshot",
-                    "count": 1
-                },
-                "children": null
+                "args": null,
+                "children": [
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slash",
+                            "count": 1
+                        },
+                        "children": null
+                    },
+                    {
+                        "rule": "Has",
+                        "options": [],
+                        "args": {
+                            "item_name": "Slingshot",
+                            "count": 1
+                        },
+                        "children": null
+                    }
+                ]
             }
         },
         {
@@ -36809,13 +36985,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Or",
@@ -36917,13 +37109,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Or",
@@ -42113,13 +42321,29 @@
                 "args": null,
                 "children": [
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Has",
@@ -43046,13 +43270,29 @@
                 "args": null,
                 "children": [
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     },
                     {
                         "rule": "Or",
@@ -45935,13 +46175,29 @@
                         "children": null
                     },
                     {
-                        "rule": "Has",
+                        "rule": "And",
                         "options": [],
-                        "args": {
-                            "item_name": "Slingshot",
-                            "count": 1
-                        },
-                        "children": null
+                        "args": null,
+                        "children": [
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slash",
+                                    "count": 1
+                                },
+                                "children": null
+                            },
+                            {
+                                "rule": "Has",
+                                "options": [],
+                                "args": {
+                                    "item_name": "Slingshot",
+                                    "count": 1
+                                },
+                                "children": null
+                            }
+                        ]
                     }
                 ]
             }
