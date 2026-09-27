@@ -37,9 +37,21 @@ Please report bugs you encounter on the Github issue tracker.
     display_name = "Randomize Slash (Experimental)"
     default = False
 
+class StartingRoom(Choice):
+    """Start the game from a different room than usual."""
+
+    display_name = "Starting Room"
+    option_ST_security_fall_P1 = 0
+    option_LQ_city_hall_C2 = 1
+    option_GA_vin_terrace_P3 = 2
+    option_LQ_vin_intro = 3
+    option_GA_root_conex_P2 = 4
+    default = 0
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["randomize_slash"] = RandomizeSlash
+    options["starting_room"] = StartingRoom
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

@@ -145,6 +145,13 @@ def event_world_to_manual(event, catalog):
         # in the name of the event?
     }
 
+starting_room_options = [
+    "ST_security_fall_P1",
+    "LQ_city_hall_C2",
+    "GA_vin_terrace_P3",
+    "LQ_vin_intro",
+    "GA_root_conex_P2"
+]
 
 def get_regions(rooms, transitions, catalog):
     out = dict(map(room_to_region, rooms))
@@ -153,8 +160,13 @@ def get_regions(rooms, transitions, catalog):
         to = t["toName"]
         reqs = parse_requirements(t["requirements"], catalog)
         out[fr]["exit_requires"][to] = reqs
-    # TODO Let Starting Room be dynamically chosen in the yaml
-    out["ST_security_fall_P1"]["starting"] = True
+    out["start"] = {
+        "starting": True,
+        "connects_to": starting_room_options,
+        "exit_requires": {
+            room: "{YamlCompare(starting_room == "+room+")}" for room in starting_room_options
+        }
+    }
     return out
 
 def room_to_region(room):
@@ -194,6 +206,7 @@ def parse_requirements(reqs, catalog, OptAll=False):
                 case "Candle (#1)": group = "candles"
                 case "Fragmented Serial Number (#1)": group = "serial_numbers"
                 case "Old Core (#1)": group = "old_cores"
+                case "Modifier Extension (#1)": group = "TRINKET_SLOT_UPGRADE"
                 case _: print(f"Unknown ListUnique requirement: {reqs}")
             return f"|@{group}:{reqs["args"]["count"]}|"
         case "False_":
@@ -266,6 +279,4 @@ manual_items = get_items(items)
 catalog = make_catalog(manual_items)
 manual_locations = get_locations(locations, catalog)
 manual_regions = get_regions(rooms, transitions, catalog)
-# TODO Set starting room
-# And goals for that matter....
 manual_events = get_events(events, catalog)
